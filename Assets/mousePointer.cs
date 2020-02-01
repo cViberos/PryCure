@@ -22,14 +22,15 @@ public class mousePointer : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit,100f,layerMask))
         {
-            Vector3 pos = new Vector3(hit.point.x, 0, hit.point.z);
+            Vector3 pos = new Vector3(hit.point.x, hit.point.y, 0);
             transform.position = pos;
-            selectedTile.transform.position = new Vector3( (int)pos.x, 0.1f, (int)pos.z );
+            //selectedTile.transform.position = new Vector3(pos.x, pos.y, 0.1f);
+            selectedTile.transform.position = new Vector3( (int)pos.x, (int)pos.y, 0.1f );
             //camera.transform.position = posCamera + transform.position;
             //posCamera = camera.transform.position + new Vector3(8, 8, -3);
             //camera.transform.position = posCamera;
 
-            
+
 
         }
         

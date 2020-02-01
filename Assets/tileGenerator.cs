@@ -16,7 +16,7 @@ public class tileGenerator : MonoBehaviour
         {
             for (int j = 0 ; j<sizeX ; j++)
             {
-                newCopy = Instantiate(copy,new Vector3(j * copy.transform.localScale.x , 0,-i * copy.transform.localScale.z),Quaternion.identity);
+                newCopy = Instantiate(copy,new Vector3(j * copy.transform.localScale.x , -i * copy.transform.localScale.y,0),Quaternion.identity);
                 newCopy.GetComponent<MeshRenderer>().material.SetColor("_Color", UnityEngine.Random.ColorHSV());
                 newCopy.GetComponent<tileData>().posX = j;
                 newCopy.GetComponent<tileData>().posY = i;
