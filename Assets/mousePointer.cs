@@ -6,8 +6,6 @@ public class mousePointer : MonoBehaviour
 {
     public GameObject selectedTile;
     private RaycastHit hit;
-    public Camera camera;
-    private Vector3 posCamera;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,14 +22,7 @@ public class mousePointer : MonoBehaviour
         {
             Vector3 pos = new Vector3(hit.point.x, hit.point.y, 0);
             transform.position = pos;
-            //selectedTile.transform.position = new Vector3(pos.x, pos.y, 0.1f);
             selectedTile.transform.position = new Vector3( (int)pos.x, (int)pos.y, 0.1f );
-            //camera.transform.position = posCamera + transform.position;
-            //posCamera = camera.transform.position + new Vector3(8, 8, -3);
-            //camera.transform.position = posCamera;
-
-
-
         }
         
     }
