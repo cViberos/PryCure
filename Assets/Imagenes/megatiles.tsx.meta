@@ -1,7 +1,81 @@
 fileFormatVersion: 2
 guid: 150ebe65d79ba564aab018d117984c98
-DefaultImporter:
+ScriptedImporter:
+  fileIDToRecycleName:
+    2800000: Atlas_megatiles_1
+    11400000: _TilesetScriptObject
+    11400002: _superAsset
+    11400004: Tile_megatiles_1
+    11400006: Tile_megatiles_2
+    11400008: Tile_megatiles_3
+    11400010: Tile_megatiles_4
+    11400012: Tile_megatiles_5
+    11400014: Tile_megatiles_6
+    11400016: Tile_megatiles_7
+    11400018: Tile_megatiles_8
+    11400020: Tile_megatiles_9
+    11400022: Tile_megatiles_10
+    11400024: Tile_megatiles_11
+    11400026: Tile_megatiles_12
+    11400028: Tile_megatiles_13
+    11400030: Tile_megatiles_14
+    11400032: Tile_megatiles_15
+    11400034: Tile_megatiles_16
+    11400036: Tile_megatiles_17
+    11400038: Tile_megatiles_18
+    11400040: Tile_megatiles_19
+    11400042: Tile_megatiles_20
+    11400044: Tile_megatiles_21
+    11400046: Tile_megatiles_22
+    11400048: Tile_megatiles_23
+    11400050: Tile_megatiles_24
+    11400052: Tile_megatiles_25
+    11400054: Tile_megatiles_26
+    11400056: Tile_megatiles_27
+    11400058: Tile_megatiles_28
+    21300000: Sprite_megatiles_1
+    21300002: Sprite_megatiles_2
+    21300004: Sprite_megatiles_3
+    21300006: Sprite_megatiles_4
+    21300008: Sprite_megatiles_5
+    21300010: Sprite_megatiles_6
+    21300012: Sprite_megatiles_7
+    21300014: Sprite_megatiles_8
+    21300016: Sprite_megatiles_9
+    21300018: Sprite_megatiles_10
+    21300020: Sprite_megatiles_11
+    21300022: Sprite_megatiles_12
+    21300024: Sprite_megatiles_13
+    21300026: Sprite_megatiles_14
+    21300028: Sprite_megatiles_15
+    21300030: Sprite_megatiles_16
+    21300032: Sprite_megatiles_17
+    21300034: Sprite_megatiles_18
+    21300036: Sprite_megatiles_19
+    21300038: Sprite_megatiles_20
+    21300040: Sprite_megatiles_21
+    21300042: Sprite_megatiles_22
+    21300044: Sprite_megatiles_23
+    21300046: Sprite_megatiles_24
+    21300048: Sprite_megatiles_25
+    21300050: Sprite_megatiles_26
+    21300052: Sprite_megatiles_27
+    21300054: Sprite_megatiles_28
   externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  script: {fileID: 11500000, guid: cc34d0f3dc257a442819830b408c5322, type: 3}
+  missingFiles: []
+  errors: []
+  warnings: []
+  missingSortingLayers: []
+  missingLayers: []
+  missingTags: []
+  importerVersion: 10
+  pixelsPerUnit: 100
+  edgesPerEllipse: 32
+  numberOfObjectsImported: 59
+  useSpriteAtlas: 1
+  atlasWidth: 2048
+  atlasHeight: 2048
