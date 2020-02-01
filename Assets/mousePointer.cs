@@ -47,6 +47,13 @@ public class mousePointer : MonoBehaviour
                 selectedTile.transform.position = new Vector3( (int)pos.x, (int)pos.y-1, 0.1f );
             }
 
+            if(posix > 0.5f){
+                selectedTile.transform.position = new Vector3( (int)pos.x+1, (int)pos.y, 0.1f );
+            }
+            if (posiy > 0.5f){
+                selectedTile.transform.position = new Vector3( (int)pos.x, (int)pos.y-1, 0.1f );
+            }
+
 
 
             //selectedTile.transform.position = new Vector3( (int)pos.x, (int)pos.y, 0.1f );
