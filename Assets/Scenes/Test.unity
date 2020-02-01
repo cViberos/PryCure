@@ -328,18 +328,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!114 &252009689 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9118354961226074212, guid: 11cb5c4d1e7f0064388c35692c6a8376,
-    type: 3}
-  m_PrefabInstance: {fileID: 9118354960974107837}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &287932736
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,13 +560,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1019476662}
   Title: {fileID: 20346497}
-  Valores: {fileID: 252009689}
+  Valores: {fileID: 0}
   Titulo: dangerus
-  Detalles: '5863
-
-    sangano
-
-    rural'
+  Detalles: 
 --- !u!65 &414577483
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -780,13 +764,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1019476662}
   Title: {fileID: 20346497}
-  Valores: {fileID: 252009689}
+  Valores: {fileID: 0}
   Titulo: delta ( h )
-  Detalles: '???
-
-    sector x
-
-    urbano'
+  Detalles: 
 --- !u!65 &680156138
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1035,7 +1015,12 @@ PrefabInstance:
     - target: {fileID: 4805525671643143270, guid: 3422cf008c08f4b46b0eb2e3ba317762,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805525671643143270, guid: 3422cf008c08f4b46b0eb2e3ba317762,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4805525671643143293, guid: 3422cf008c08f4b46b0eb2e3ba317762,
         type: 3}
@@ -5874,6 +5859,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SelectEffect
       objectReference: {fileID: 0}
+    - target: {fileID: 379868516606459717, guid: 96bab5791001afa49b0ef7e50096bd2d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 379868516606459714, guid: 96bab5791001afa49b0ef7e50096bd2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5968,6 +5958,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 379868515921014491, guid: 96bab5791001afa49b0ef7e50096bd2d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96bab5791001afa49b0ef7e50096bd2d, type: 3}

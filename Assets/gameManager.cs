@@ -17,22 +17,23 @@ public class gameManager : MonoBehaviour
     {
         sizeX = generador.GetComponent<tileGenerator>().sizeX;
         sizeY = generador.GetComponent<tileGenerator>().sizeY;
+
         int k = 0;
         for (int i = 0; i < sizeY; i++)
         {
-            
+
             for (int j = 0; j < sizeX; j++)
             {
-                
-                newCopy = Instantiate(disponibleTile, new Vector3(j , -i , -0.2f), Quaternion.identity);
+
+                newCopy = Instantiate(disponibleTile, new Vector3(j, -i, -0.2f), Quaternion.identity);
                 newCopy.SetActive(true);
-                if(NoDisponibleArray[k]==true)
+                if (NoDisponibleArray[k] == true)
                 {
                     newCopy.GetComponent<SpriteRenderer>().material.SetColor("_Color", Color.red);
                 }
                 k += 1;
             }
-            
+
         }
 
     }
@@ -43,16 +44,53 @@ public class gameManager : MonoBehaviour
 
         print("Es el turno:" + turn);
 
+        
+
         LayerMask layerMask = ~(1 << 9);
+
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
 
         if (Physics.Raycast(ray, out hit, 100f, layerMask))
         {
-            Vector3 pos = new Vector3(hit.point.x, hit.point.y, 0);
-            transform.position = pos;
-            selectedTile.transform.position = new Vector3((int)pos.x, (int)pos.y, 0.1f);
-        }
 
+            if (Input.GetMouseButtonDown(0))
+            {
+
+                if (hit.transform.name == "TILE(Clone)")
+                {
+                    int posX = hit.transform.gameObject.GetComponent<tileData>().posX;
+                    int posY = hit.transform.gameObject.GetComponent<tileData>().posY;
+
+                    sizeX = generador.GetComponent<tileGenerator>().sizeX;
+                    sizeY = generador.GetComponent<tileGenerator>().sizeY;
+
+                    int k = 0;
+                    for (int i = 0; i < sizeY; i++)
+                    {
+                        
+                        for (int j = 0; j < sizeX; j++)
+                        {
+                            if (i == posY && j == posX)
+                            {
+                                NoDisponibleArray[k] = true;
+                            }
+                            else
+                            {
+                                k += 1;
+                            }
+                        }
+                        
+                    }
+                    
+                    
+
+
+                }
+
+                
+            }
+        }
         if (allUsed == false)
             for (int i = 0; i < NoDisponibleArray.Length; i++)
             {
@@ -65,4 +103,6 @@ public class gameManager : MonoBehaviour
             }
         
     }
+
+    
 }
