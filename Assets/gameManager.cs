@@ -74,6 +74,7 @@ public class gameManager : MonoBehaviour
                             if (i == posY && j == posX)
                             {
                                 NoDisponibleArray[k] = true;
+                                hit.transform.gameObject.GetComponent<MeshRenderer>().material.SetColor("_Color", UnityEngine.Color.red);
                             }
                             else
                             {
