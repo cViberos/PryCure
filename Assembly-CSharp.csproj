@@ -53,15 +53,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Menu\ImputClave.cs" />
+     <Compile Include="Assets\Scripts\CursorObjeto.cs" />
+     <Compile Include="Assets\Scripts\DetaiNodos.cs" />
+     <Compile Include="Assets\Scripts\Menu\EstadoPersonaje.cs" />
      <Compile Include="Assets\Scripts\Menu\Iniciar.cs" />
-     <Compile Include="Assets\Scripts\Menu\LanzadorConfig.cs" />
-     <Compile Include="Assets\Scripts\Menu\LoginConfig.cs" />
-     <Compile Include="Assets\Scripts\Menu\OpcionesMenu.cs" />
-     <Compile Include="Assets\Scripts\Menu\PantallaMod.cs" />
-     <Compile Include="Assets\Scripts\Menu\VolumenSFX.cs" />
-     <Compile Include="Assets\Scripts\Menu\VolumMuteLogMusic.cs" />
-     <Compile Include="Assets\Scripts\Menu\VolumMuteMusic.cs" />
      <None Include="Assets\Fuentes\symtext\Font License.txt" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Proyectos/Cure Inc/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
