@@ -548,7 +548,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &303487104
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1047,7 +1047,7 @@ GameObject:
   m_Component:
   - component: {fileID: 814738874}
   m_Layer: 0
-  m_Name: JuegaHumanoCartel
+  m_Name: cartelJuegaHumanoCartel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1321,6 +1321,11 @@ PrefabInstance:
       propertyPath: selectedTile
       value: 
       objectReference: {fileID: 64107343}
+    - target: {fileID: 4805525671643143291, guid: 3422cf008c08f4b46b0eb2e3ba317762,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3422cf008c08f4b46b0eb2e3ba317762, type: 3}
 --- !u!1 &980900994
@@ -1357,8 +1362,10 @@ MonoBehaviour:
   disponibleTile: {fileID: 303487103}
   NoDisponibleArray: 010101010101010000000001010000000001010000000001010000000001010101010101
   selectedTile: {fileID: 64107343}
-  JuegaHumano: {fileID: 814738873}
-  JuegaVirus: {fileID: 1147003471}
+  tilesJugador1: []
+  tilesJugador2: []
+  cartelJuegaHumano: {fileID: 814738873}
+  cartelJuegaVirus: {fileID: 1147003471}
 --- !u!4 &980900996
 Transform:
   m_ObjectHideFlags: 0
@@ -6291,7 +6298,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1147003472}
   m_Layer: 0
-  m_Name: Juega Virus
+  m_Name: cartelJuega Virus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
