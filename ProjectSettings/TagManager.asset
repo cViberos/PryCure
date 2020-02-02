@@ -11,6 +11,8 @@ TagManager:
   - Playa
   - Llanura
   - Montana
+  - Humano
+  - Virus
   layers:
   - Default
   - TransparentFX

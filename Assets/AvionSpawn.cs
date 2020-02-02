@@ -8,7 +8,7 @@ public class AvionSpawn : MonoBehaviour
 {
 
     public GameObject[] avionetas;
-    
+
     private Vector2 RandomPos;
     private bool spawn = true;
 
@@ -21,7 +21,7 @@ public class AvionSpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int position = Random.Range(0, 4);
+        int position = Random.Range(0, 2);
 
         if (spawn == true)
         {
@@ -46,42 +46,24 @@ public class AvionSpawn : MonoBehaviour
                 StartCoroutine("Wait");
 
             }
-            if (position == 2)
-            {
-                spawn = false;
-                RandomPos.y = 0.5f;
-                RandomPos.x = Random.Range(-1.5f, 4.7f);
-                Instantiate(avionetas[position], new Vector3(RandomPos.x, RandomPos.y, -0.6f), transform.rotation);
 
-                StartCoroutine("Wait");
+
             }
-            if (position == 3)
-            {
-                spawn = false;
-                RandomPos.y = -8.0f;
-                RandomPos.x = Random.Range(-1.5f, 4.7f);
-                Instantiate(avionetas[position], new Vector3(RandomPos.x, RandomPos.y, -0.6f), transform.rotation);
-
-                StartCoroutine("Wait");
-            }
-
-
         }
-    }
 
 
-    private void StartDelay()
-    {
-       
-        spawn = true;
-    }
+        private void StartDelay()
+        {
 
-    IEnumerator Wait()
-    {
-        
-        yield return new WaitForSecondsRealtime(5.0f);
-        StartDelay();
-    }
-}
+            spawn = true;
+        }
+
+        IEnumerator Wait()
+        {
+
+            yield return new WaitForSecondsRealtime(5.0f);
+            StartDelay();
+        }
+    } 
 
   

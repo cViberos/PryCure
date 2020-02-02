@@ -12,7 +12,7 @@ public class tileGenerator : MonoBehaviour
     void Start()
     {
         
-        for (int i = 0; i<sizeY ; i++)
+       for (int i = 0; i<sizeY ; i++)
         {
             for (int j = 0 ; j<sizeX ; j++)
             {

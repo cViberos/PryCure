@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class gameManager : MonoBehaviour
 {
+    public int poblacionJ1, poblacionJ2;
     public int turn;
     public GameObject generador;
     public int sizeX, sizeY;
     public GameObject disponibleTile;
     public bool[] NoDisponibleArray;
     //GameObject newCopy;
-    bool allUsed = false;
+    //bool allUsed = false;
     public GameObject selectedTile;
     private RaycastHit hit;
     public GameObject[,] matrixDisp;
@@ -26,13 +27,14 @@ public class gameManager : MonoBehaviour
     public GameObject[] prefabVirus;
     public GameObject[] prefabSalud;
 
-    public int recursosHumanos;
-    public int recursosVirus;
+    //public GameObject Humano;
+    //public GameObject Virus;
+    public Canvas canvas;
 
     void Start()
     {
-        recursosHumanos = 0;
-        recursosVirus = 0;
+        canvas.gameObject.SetActive(true);
+
         sizeX = generador.GetComponent<tileGenerator>().sizeX;
         sizeY = generador.GetComponent<tileGenerator>().sizeY;
 
@@ -68,22 +70,18 @@ public class gameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
-
-        print("Es el turno:" + turn);
+        //print("Es el turno:" + turn);
 
         LayerMask layerMask = ~(1 << 9);
-
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        if (turn <= 16)
+        // Etapa de Seleccion
+        if  (turn <= 16)
         {
             if (Physics.Raycast(ray, out hit, 100f, layerMask))
             {
                 if (Input.GetMouseButtonDown(0))
                 {
-
                     if (hit.transform.name == "TILE(Clone)")
                     {
                         int posX = hit.transform.gameObject.GetComponent<tileData>().posX;
@@ -99,44 +97,77 @@ public class gameManager : MonoBehaviour
                             {
                                 if (i == posY && j == posX)
                                 {
-                                    /* NoDisponibleArray[k] = true;
-                                     matrixDisp[i, j].GetComponent<SpriteRenderer>().material.SetColor("_Color", Color.red);*/
-                                    if (turn % 2 == 0)
+ 
+                                    if(NoDisponibleArray[k]==false)
                                     {
-                                        // Anula los clicks invalidos.
-                                        if (posX != 0 && posX != 5 && posY != 0 && posY != 5 && NoDisponibleArray[k] == false)
+                                        NoDisponibleArray[k] = true;
+                                        matrixDisp[i, j].GetComponent<SpriteRenderer>().material.SetColor("_Color", Color.red);
+
+                                        takeTurn();
+
+                                        if (turn % 2 == 0)
                                         {
-                                            if(turn == 0)
+                                            if (turn == 0)
                                             {
-                                                Instantiate(prefabVirus[0], new Vector3(posX + 0.5f, -posY + 0.97f, -0.6f), prefabVirus[0].transform.rotation);
+                                                Instantiate(prefabVirus[0], new Vector3(posX + 0.5f, -posY + 0.97f, -0.6f), prefabVirus[0].transform.rotation);//Cambiar cuando cambien los modelos
                                             }
-                                            NoDisponibleArray[k] = true;
-                                            matrixDisp[i, j].GetComponent<SpriteRenderer>().material.SetColor("_Color", Color.red);
                                             cartelJuegaHumano.SetActive(true);
                                             cartelJuegaVirus.SetActive(false);
                                             tilesJugador1[cantTilesJ1] = matrixDisp[i, j];
                                             cantTilesJ1++;
-                                            turn++;
                                         }
-
-
-                                    }
-                                    else
-                                    {
-                                        if (turn == 1)
-                                            Instantiate(prefabSalud[0], new Vector3(posX -0.4f, -posY -0.4f, -0.6f), prefabSalud[0].transform.rotation);
+                                        else
                                         {
-                                            NoDisponibleArray[k] = true;
-                                            matrixDisp[i, j].GetComponent<SpriteRenderer>().material.SetColor("_Color", Color.red);
+                                            if (turn == 1)
+                                                
+                                            {
+                                                Instantiate(prefabSalud[0], new Vector3(posX - 0.4f, -posY - 0.4f, -0.6f), prefabSalud[0].transform.rotation);//Cambiar cuando cambien los modelos
+                                            }
                                             cartelJuegaHumano.SetActive(false);
                                             cartelJuegaVirus.SetActive(true);
                                             tilesJugador2[cantTilesJ2] = matrixDisp[i, j];
                                             cantTilesJ2++;
-                                            turn++;
                                         }
 
+                                            /*if (turn % 2 == 0)
+                                            {
+                                                // Anula los clicks invalidos.
+                                                //if (posX != 0 && posX != 5 && posY != 0 && posY != 5 && NoDisponibleArray[k] == false)
+                                                //{
+                                                if(turn == 0)
+                                                    {
+                                                        Instantiate(prefabVirus[0], new Vector3(posX + 0.5f, -posY + 0.97f, -0.6f), prefabVirus[0].transform.rotation);//Cambiar cuando cambien los modelos
+                                                    }
+
+                                                    NoDisponibleArray[k] = true;
+                                                    matrixDisp[i, j].GetComponent<SpriteRenderer>().material.SetColor("_Color", Color.red);
+                                                    cartelJuegaHumano.SetActive(true);
+                                                    cartelJuegaVirus.SetActive(false);
+                                                    tilesJugador1[cantTilesJ1] = matrixDisp[i, j];
+                                                    cantTilesJ1++;
+                                                    turn++;
+                                                //}
 
 
+                                            }
+                                            else
+                                            {
+                                                if (turn == 1)
+                                                    Instantiate(prefabSalud[0], new Vector3(posX -0.4f, -posY -0.4f, -0.6f), prefabSalud[0].transform.rotation);//Cambiar cuando cambien los modelos
+                                                {
+                                                    NoDisponibleArray[k] = true;
+                                                    matrixDisp[i, j].GetComponent<SpriteRenderer>().material.SetColor("_Color", Color.red);
+                                                    cartelJuegaHumano.SetActive(false);
+                                                    cartelJuegaVirus.SetActive(true);
+                                                    tilesJugador2[cantTilesJ2] = matrixDisp[i, j];
+                                                    cantTilesJ2++;
+                                                    turn++;
+                                                }
+                                            }*/
+                                        }
+                                    else
+                                    {
+                                        print("casilla ocupada!");
                                     }
                                 }
                                 else
@@ -146,22 +177,6 @@ public class gameManager : MonoBehaviour
                             }
                         }
 
-                        if (allUsed == false)
-                        {
-                            for (int i = 0; i < NoDisponibleArray.Length; i++)
-                            {
-                                allUsed = true;
-
-                                if (NoDisponibleArray[i] == true)
-                                {
-                                    allUsed = false;
-                                }
-                            }
-                        }
-                        else
-                        {
-                            print("lleno");
-                        }
                     }
 
 
@@ -170,8 +185,12 @@ public class gameManager : MonoBehaviour
             }
 
         }
+        //Fin Etapa Elegir Casillas
+        //Inicio de Juego
         else
         {
+            //Humano.gameObject.GetComponent<ManagerHumano>().poblacion+=  CalcularPoblacion(tilesJugador1, Humano);
+
             if (Physics.Raycast(ray, out hit, 100f, layerMask))
             {
                 if (Input.GetMouseButtonDown(0))
@@ -180,9 +199,6 @@ public class gameManager : MonoBehaviour
                     {
                         int posX = hit.transform.gameObject.GetComponent<tileData>().posX;
                         int posY = hit.transform.gameObject.GetComponent<tileData>().posY;
-
-
-
                     }
                     
                 }
@@ -191,4 +207,48 @@ public class gameManager : MonoBehaviour
 
         }
     }
+
+    public void takeTurn()
+    {
+        turn++;
+        print("Es el turno:" + turn);
+        print("Poblacion Jugador 1 :" + poblacionJ1);
+        print("Poblacion Jugador 2 :" + poblacionJ2);
+
+    }
+
+    //No funciona..."GameObject[] player" probablemente
+    public int CalcularPoblacion(GameObject[] player,GameObject HV)
+      {
+
+        int poblacion = 0;
+          for(int index =0; index < player.Length;index++)
+          {
+            Debug.Log("Index" + index);
+            
+              int posx = player[index].gameObject.GetComponent<tileData>().posX;
+              int posy = player[index].gameObject.GetComponent<tileData>().posY;
+
+            Collider[] hitColliders = Physics.OverlapSphere(new Vector3(posx, posy, -0.1f), 10.0f);
+
+            if (hitColliders.Length >= 1)
+
+            {
+                Debug.Log("Found");
+                for (int count = 0; count < hitColliders.Length; count++)
+                {
+                    if (hitColliders[count].gameObject.CompareTag("Playa"))
+                        poblacion += 300;
+                    if (hitColliders[count].gameObject.CompareTag("Llanura"))
+                        poblacion += 800;
+                    if (hitColliders[count].gameObject.CompareTag("Montana"))
+                        poblacion += 1200;
+ }
+            }
+
+
+        }
+        return poblacion;
+      }
+
 }
