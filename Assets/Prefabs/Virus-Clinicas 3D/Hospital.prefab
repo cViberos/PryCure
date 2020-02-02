@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6256283545054820537
+--- !u!1 &9055019559970252340
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6256283545054651545}
-  - component: {fileID: 6256283545055978681}
-  - component: {fileID: 6256283545057076857}
+  - component: {fileID: 9055019559970028052}
+  - component: {fileID: 9055019559967160884}
+  - component: {fileID: 9055019559968258292}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -18,35 +18,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6256283545054651545
+--- !u!4 &9055019559970028052
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6256283545054820537}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 9055019559970252340}
+  m_LocalRotation: {x: 0.008305855, y: 0.7070581, z: -0.70705795, w: -0.008305688}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
-  m_Father: {fileID: 6256283545054651547}
+  m_Father: {fileID: 9055019559970028054}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &6256283545055978681
+  m_LocalEulerAnglesHint: {x: -271.346, y: -90.00001, z: 90.00001}
+--- !u!33 &9055019559967160884
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6256283545054820537}
-  m_Mesh: {fileID: 4300000, guid: 4bec53fc946b2564b9c0ccb2efa4f7f7, type: 3}
---- !u!23 &6256283545057076857
+  m_GameObject: {fileID: 9055019559970252340}
+  m_Mesh: {fileID: 4300000, guid: 78b060f2edcaf6448a34d06bd7271d13, type: 3}
+--- !u!23 &9055019559968258292
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6256283545054820537}
+  m_GameObject: {fileID: 9055019559970252340}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -57,7 +57,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cc1ad9fbafce37840946aecfe5b3ab5d, type: 2}
+  - {fileID: 2100000, guid: 78b060f2edcaf6448a34d06bd7271d13, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -77,7 +77,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!1 &6256283545054820539
+--- !u!1 &9055019559970252342
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,26 +85,26 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6256283545054651547}
+  - component: {fileID: 9055019559970028054}
   m_Layer: 0
-  m_Name: Hospital
+  m_Name: Hospital (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6256283545054651547
+--- !u!4 &9055019559970028054
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6256283545054820539}
-  m_LocalRotation: {x: -0.02403968, y: 0.7791878, z: -0.6261658, w: -0.014315575}
-  m_LocalPosition: {x: 2.22, y: -1.42, z: -0.51}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_GameObject: {fileID: 9055019559970252342}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 6256283545054651545}
+  - {fileID: 9055019559970028052}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -257.551, y: -2.072998, z: 174.801}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
