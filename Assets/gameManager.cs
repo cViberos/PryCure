@@ -13,6 +13,8 @@ public class gameManager : MonoBehaviour
     bool allUsed = false;
     public GameObject selectedTile;
     private RaycastHit hit;
+    public GameObject JuegaHumano;
+    public GameObject JuegaVirus;
     void Start()
     {
         sizeX = generador.GetComponent<tileGenerator>().sizeX;
@@ -43,8 +45,21 @@ public class gameManager : MonoBehaviour
     {
 
         print("Es el turno:" + turn);
+        if (turn % 2 == 0)
+        {
+            JuegaHumano.SetActive(true);
+            JuegaVirus.SetActive(false);
 
+        }
+        else
+        {
+            JuegaHumano.SetActive(false);
+            JuegaVirus.SetActive(true);
+        }
         
+
+
+
 
         LayerMask layerMask = ~(1 << 9);
 
@@ -88,8 +103,8 @@ public class gameManager : MonoBehaviour
 
 
                 }
+                turn++;
 
-                
             }
         }
         if (allUsed == false)
