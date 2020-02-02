@@ -15,6 +15,12 @@ public class gameManager : MonoBehaviour
     public GameObject selectedTile;
     private RaycastHit hit;
     public GameObject[,] matrixDisp;
+    
+    [Header("OBJETOS DE LOS BANDOS")]
+    [Tooltip("Definicion de datos relevantes a los jugadores")]
+
+    public Color ColorHumano;
+    public Color ColorVirus;
     public GameObject[] tilesJugador1;
     private int cantTilesJ1 = 0;
     public GameObject[] tilesJugador2;
@@ -103,7 +109,7 @@ public class gameManager : MonoBehaviour
                                     if(NoDisponibleArray[k]==false)
                                     {
                                         NoDisponibleArray[k] = true;
-                                        matrixDisp[i, j].GetComponent<SpriteRenderer>().material.SetColor("_Color", Color.red);
+                                        //matrixDisp[i, j].GetComponent<SpriteRenderer>().material.SetColor("_Color", Color.red);
 
                                         takeTurn();
 
@@ -116,7 +122,8 @@ public class gameManager : MonoBehaviour
                                                 Instantiate(prefabVirus[0], new Vector3(posX + 0.5f, -posY + 0.97f, -0.6f), prefabVirus[0].transform.rotation);//Cambiar cuando cambien los modelos
                                             }
                                             cartelJuegaHumano.SetActive(true);
-                                            cartelJuegaVirus.SetActive(false);
+                                            cartelJuegaVirus.SetActive(false); 
+                                            matrixDisp[i, j].GetComponent<SpriteRenderer>().color = ColorVirus; //Modificado por Chuku
                                             tilesJugador1[cantTilesJ1] = matrixDisp[i, j];
                                             cantTilesJ1++;
                                         }
@@ -130,6 +137,7 @@ public class gameManager : MonoBehaviour
                                             }
                                             cartelJuegaHumano.SetActive(false);
                                             cartelJuegaVirus.SetActive(true);
+                                            matrixDisp[i, j].GetComponent<SpriteRenderer>().color = ColorHumano; //Modificado por Chuku
                                             tilesJugador2[cantTilesJ2] = matrixDisp[i, j];
                                             cantTilesJ2++;
                                         }
