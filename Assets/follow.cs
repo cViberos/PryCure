@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ManagerHumano : MonoBehaviour
+public class follow : MonoBehaviour
 {
-    public int poblacion;
-    public int Recursos;
+    public GameObject target;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +15,6 @@ public class ManagerHumano : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log("poblacion" + poblacion);
+        transform.LookAt(target.transform);
     }
 }
