@@ -8,6 +8,9 @@ TagManager:
   - Izquierda
   - Arriba
   - Abajo
+  - Playa
+  - Llanura
+  - Montana
   layers:
   - Default
   - TransparentFX

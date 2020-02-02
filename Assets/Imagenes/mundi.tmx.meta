@@ -1,0 +1,39 @@
+fileFormatVersion: 2
+guid: a1a078f4ea388f544914323c4280a734
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: _MapPrfab/mundi
+    100002: _MapPrfab/mundi/Grid
+    100004: _MapPrfab/mundi/Grid/Capa de patrones 1
+    400000: _MapPrfab/mundi/Transform
+    400002: _MapPrfab/mundi/Grid/Transform
+    400004: _MapPrfab/mundi/Grid/Capa de patrones 1/Transform
+    11400000: _MapPrfab/mundi/MonoBehaviour-SuperTiled2Unity.SuperMap
+    11400002: _MapPrfab/mundi/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400004: _MapPrfab/mundi/Grid/Capa de patrones 1/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400006: _MapPrfab/mundi/Grid/Capa de patrones 1/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400008: _superAsset
+    100100000: _MapPrfab
+    2569400265252428796: _MapPrfab/mundi/Grid/Grid
+    3664157343022684176: _MapPrfab/mundi/Grid/Capa de patrones 1/TilemapRenderer
+    8195094279510102542: _MapPrfab/mundi/Grid/Capa de patrones 1/Tilemap
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
+  missingFiles: []
+  errors: []
+  warnings: []
+  missingSortingLayers: []
+  missingLayers: []
+  missingTags: []
+  importerVersion: 21
+  pixelsPerUnit: 100
+  edgesPerEllipse: 32
+  numberOfObjectsImported: 2
+  tilesAsObjects: 0
+  sortingMode: 0
+  isIsometric: 0
+  customImporterClassName: 
+  internalTilesets: []
