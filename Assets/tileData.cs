@@ -18,7 +18,7 @@ public class tileData : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter(Collision collision)
+    /*private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Playa"))
             tipo = 1;
@@ -27,5 +27,5 @@ public class tileData : MonoBehaviour
         if (collision.gameObject.CompareTag("Montana"))
             tipo = 3;
         
-    }
+    }*/
 }

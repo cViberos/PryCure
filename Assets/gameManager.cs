@@ -31,6 +31,8 @@ public class gameManager : MonoBehaviour
     //public GameObject Virus;
     public Canvas canvas;
 
+    public GameObject selectEffet;
+
     void Start()
     {
         canvas.gameObject.SetActive(true);
@@ -107,6 +109,8 @@ public class gameManager : MonoBehaviour
 
                                         if (turn % 2 == 0)
                                         {
+                                            selectEffet.GetComponent<mousePointer>().selectedHumanTile.SetActive(false);
+                                            selectEffet.GetComponent<mousePointer>().selectedVirusTile.SetActive(true);
                                             if (turn == 0)
                                             {
                                                 Instantiate(prefabVirus[0], new Vector3(posX + 0.5f, -posY + 0.97f, -0.6f), prefabVirus[0].transform.rotation);//Cambiar cuando cambien los modelos
@@ -118,8 +122,9 @@ public class gameManager : MonoBehaviour
                                         }
                                         else
                                         {
+                                            selectEffet.GetComponent<mousePointer>().selectedHumanTile.SetActive(true);
+                                            selectEffet.GetComponent<mousePointer>().selectedVirusTile.SetActive(false);
                                             if (turn == 1)
-                                                
                                             {
                                                 Instantiate(prefabSalud[0], new Vector3(posX - 0.4f, -posY - 0.4f, -0.6f), prefabSalud[0].transform.rotation);//Cambiar cuando cambien los modelos
                                             }
