@@ -60,8 +60,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AvionSpawn.cs" />
     <Compile Include="Assets\gameManager.cs" />
     <Compile Include="Assets\mousePointer.cs" />
+    <Compile Include="Assets\moverAvioneta.cs" />
     <Compile Include="Assets\Scripts\CursorObjeto.cs" />
     <Compile Include="Assets\Scripts\DetaiNodos.cs" />
     <Compile Include="Assets\Scripts\Menu\EstadoPersonaje.cs" />
