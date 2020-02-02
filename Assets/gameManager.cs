@@ -9,16 +9,22 @@ public class gameManager : MonoBehaviour
     int sizeX, sizeY;
     public GameObject disponibleTile;
     public bool[] NoDisponibleArray;
-    GameObject newCopy;
+    //GameObject newCopy;
     bool allUsed = false;
     public GameObject selectedTile;
     private RaycastHit hit;
+<<<<<<< HEAD
+    public GameObject[,] matrixDisp;
+=======
     public GameObject JuegaHumano;
     public GameObject JuegaVirus;
+>>>>>>> 9135ad7d22f81bf05c234e0cbfb51e086f19c059
     void Start()
     {
         sizeX = generador.GetComponent<tileGenerator>().sizeX;
         sizeY = generador.GetComponent<tileGenerator>().sizeY;
+
+        matrixDisp = new GameObject[sizeX, sizeY];
 
         int k = 0;
         for (int i = 0; i < sizeY; i++)
@@ -27,11 +33,15 @@ public class gameManager : MonoBehaviour
             for (int j = 0; j < sizeX; j++)
             {
 
-                newCopy = Instantiate(disponibleTile, new Vector3(j, -i, -0.2f), Quaternion.identity);
-                newCopy.SetActive(true);
+
+                matrixDisp[i,j] = Instantiate(disponibleTile, new Vector3(j, -i, -0.2f), Quaternion.identity);
+                matrixDisp[i, j].SetActive(true);
+                matrixDisp[i, j].GetComponent<tileData>().posX = j;
+                matrixDisp[i, j].GetComponent<tileData>().posY = i;
+
                 if (NoDisponibleArray[k] == true)
                 {
-                    newCopy.GetComponent<SpriteRenderer>().material.SetColor("_Color", Color.red);
+                    matrixDisp[i, j].GetComponent<SpriteRenderer>().material.SetColor("_Color", Color.red);
                 }
                 k += 1;
             }
@@ -89,7 +99,7 @@ public class gameManager : MonoBehaviour
                             if (i == posY && j == posX)
                             {
                                 NoDisponibleArray[k] = true;
-                                hit.transform.gameObject.GetComponent<MeshRenderer>().material.SetColor("_Color", UnityEngine.Color.red);
+                                matrixDisp[i, j].GetComponent<SpriteRenderer>().material.SetColor("_Color", Color.red);
                             }
                             else
                             {

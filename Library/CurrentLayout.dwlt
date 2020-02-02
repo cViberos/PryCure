@@ -21,7 +21,15 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 4}
+<<<<<<< HEAD
   m_MinSize: {x: 950, y: 524}
+=======
+<<<<<<< HEAD
+  m_MinSize: {x: 950, y: 548}
+=======
+  m_MinSize: {x: 950, y: 300}
+>>>>>>> 9135ad7d22f81bf05c234e0cbfb51e086f19c059
+>>>>>>> 2b025560976fabaeecae5020c1e9842db4301317
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -39,9 +47,15 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
+    y: 361
+    width: 347
+    height: 274
+=======
     y: 367
     width: 349
     height: 278
+>>>>>>> 9135ad7d22f81bf05c234e0cbfb51e086f19c059
   m_MinSize: {x: 234, y: 274}
   m_MaxSize: {x: 10004, y: 10024}
   m_ActualView: {fileID: 17}
@@ -69,12 +83,29 @@ MonoBehaviour:
     serializedVersion: 2
     x: 742
     y: 0
+<<<<<<< HEAD
     width: 349
+=======
+<<<<<<< HEAD
+    width: 347
+    height: 635
+  m_MinSize: {x: 234, y: 498}
+  m_MaxSize: {x: 10004, y: 14048}
+  vertical: 1
+  controlID: 96
+=======
+    width: 312
+>>>>>>> 2b025560976fabaeecae5020c1e9842db4301317
     height: 645
   m_MinSize: {x: 234, y: 474}
   m_MaxSize: {x: 10004, y: 14024}
   vertical: 1
+<<<<<<< HEAD
   controlID: 62
+=======
+  controlID: 92
+>>>>>>> 9135ad7d22f81bf05c234e0cbfb51e086f19c059
+>>>>>>> 2b025560976fabaeecae5020c1e9842db4301317
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -96,8 +127,13 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1366
+<<<<<<< HEAD
+    height: 685
+  m_MinSize: {x: 950, y: 548}
+=======
     height: 695
   m_MinSize: {x: 950, y: 300}
+>>>>>>> 9135ad7d22f81bf05c234e0cbfb51e086f19c059
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &5
 MonoBehaviour:
@@ -142,11 +178,23 @@ MonoBehaviour:
     x: 0
     y: 30
     width: 1366
+<<<<<<< HEAD
+    height: 635
+  m_MinSize: {x: 713, y: 498}
+  m_MaxSize: {x: 18008, y: 14048}
+  vertical: 0
+  controlID: 121
+=======
     height: 645
   m_MinSize: {x: 711, y: 474}
   m_MaxSize: {x: 18006, y: 14024}
   vertical: 0
+<<<<<<< HEAD
   controlID: 91
+=======
+  controlID: 34
+>>>>>>> 9135ad7d22f81bf05c234e0cbfb51e086f19c059
+>>>>>>> 2b025560976fabaeecae5020c1e9842db4301317
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -192,7 +240,15 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 448}
   m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
+<<<<<<< HEAD
   controlID: 92
+=======
+<<<<<<< HEAD
+  controlID: 122
+=======
+  controlID: 35
+>>>>>>> 9135ad7d22f81bf05c234e0cbfb51e086f19c059
+>>>>>>> 2b025560976fabaeecae5020c1e9842db4301317
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -210,10 +266,22 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 349
     height: 367
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+<<<<<<< HEAD
+    width: 347
+    height: 361
+=======
+    width: 312
+    height: 367
+>>>>>>> 9135ad7d22f81bf05c234e0cbfb51e086f19c059
+  m_MinSize: {x: 204, y: 224}
+  m_MaxSize: {x: 4004, y: 4024}
+>>>>>>> 2b025560976fabaeecae5020c1e9842db4301317
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -236,10 +304,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1091
     y: 0
+<<<<<<< HEAD
     width: 275
+=======
+<<<<<<< HEAD
+    width: 277
+    height: 635
+  m_MinSize: {x: 277, y: 74}
+  m_MaxSize: {x: 4002, y: 4024}
+=======
+    width: 312
+>>>>>>> 2b025560976fabaeecae5020c1e9842db4301317
     height: 645
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> 9135ad7d22f81bf05c234e0cbfb51e086f19c059
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -263,9 +342,19 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 742
+<<<<<<< HEAD
     height: 224
+=======
+<<<<<<< HEAD
+    height: 326
+  m_MinSize: {x: 202, y: 224}
+  m_MaxSize: {x: 4002, y: 4024}
+=======
+    height: 331
+>>>>>>> 2b025560976fabaeecae5020c1e9842db4301317
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> 9135ad7d22f81bf05c234e0cbfb51e086f19c059
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -290,9 +379,19 @@ MonoBehaviour:
     x: 0
     y: 224
     width: 742
+<<<<<<< HEAD
     height: 421
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+<<<<<<< HEAD
+    height: 309
+=======
+    height: 314
+>>>>>>> 9135ad7d22f81bf05c234e0cbfb51e086f19c059
+  m_MinSize: {x: 202, y: 224}
+  m_MaxSize: {x: 4002, y: 4024}
+>>>>>>> 2b025560976fabaeecae5020c1e9842db4301317
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -420,9 +519,21 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 88b0ffff
       m_LastClickedID: -20344
       m_ExpandedIDs: ec9fffff5eb8ffff80beffff44d3ffffcad5ffff92dcffff2cddffff5ee0ffff64e4ffffa4e7ffffd6fbffff
+=======
+<<<<<<< HEAD
+      m_SelectedIDs: 042b0000
+      m_LastClickedID: 11012
+      m_ExpandedIDs: d6fbffff
+=======
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: f43c0000
+>>>>>>> 9135ad7d22f81bf05c234e0cbfb51e086f19c059
+>>>>>>> 2b025560976fabaeecae5020c1e9842db4301317
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: AvionetaAbajo(Clone)
@@ -531,7 +642,15 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 102b0000
     m_LastClickedID: 11024
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000ac0a0000140e0000
+=======
+<<<<<<< HEAD
+    m_ExpandedIDs: 0000000056270000a2290000
+=======
+    m_ExpandedIDs: 000000003630000090320000
+>>>>>>> 9135ad7d22f81bf05c234e0cbfb51e086f19c059
+>>>>>>> 2b025560976fabaeecae5020c1e9842db4301317
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -556,10 +675,24 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 60}
     m_SelectedIDs: 
     m_LastClickedID: 0
     m_ExpandedIDs: ffffffff00000000ac0a00003c370000
+=======
+<<<<<<< HEAD
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: ffffffff0000000056270000a2290000
+=======
+    scrollPos: {x: 0, y: 1200}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: ffffffff0000000090320000003d0000
+>>>>>>> 9135ad7d22f81bf05c234e0cbfb51e086f19c059
+>>>>>>> 2b025560976fabaeecae5020c1e9842db4301317
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: moverAvioneta

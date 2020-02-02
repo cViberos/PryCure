@@ -5,6 +5,7 @@ using UnityEngine;
 public class tileData : MonoBehaviour
 {
     public int posX, posY;
+    public int jugador;
     // Start is called before the first frame update
     void Start()
     {
