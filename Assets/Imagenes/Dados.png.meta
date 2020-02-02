@@ -1,7 +1,19 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: bbb20cb678655b3408a02faec21952b9
 TextureImporter:
   fileIDToRecycleName: {}
+=======
+guid: e63063e70e05ea042b2e7d34c802cc50
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Dados_0
+    21300002: Dados_1
+    21300004: Dados_2
+    21300006: Dados_3
+    21300008: Dados_4
+    21300010: Dados_5
+>>>>>>> 91c8e3245631b37b7079f2160863cbba98aca53d
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -40,7 +52,11 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
+<<<<<<< HEAD
   spriteMode: 1
+=======
+  spriteMode: 2
+>>>>>>> 91c8e3245631b37b7079f2160863cbba98aca53d
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -50,7 +66,11 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
+<<<<<<< HEAD
   spriteTessellationDetail: 0
+=======
+  spriteTessellationDetail: -1
+>>>>>>> 91c8e3245631b37b7079f2160863cbba98aca53d
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -60,7 +80,11 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
+<<<<<<< HEAD
     maxTextureSize: 512
+=======
+    maxTextureSize: 2048
+>>>>>>> 91c8e3245631b37b7079f2160863cbba98aca53d
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -71,7 +95,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
+<<<<<<< HEAD
     maxTextureSize: 512
+=======
+    maxTextureSize: 2048
+>>>>>>> 91c8e3245631b37b7079f2160863cbba98aca53d
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -82,6 +110,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
+<<<<<<< HEAD
     sprites: []
     outline:
     - - {x: -211, y: -3}
@@ -152,6 +181,133 @@ TextureImporter:
       - {x: 213, y: 137}
     bones: []
     spriteID: 76d757732c4600e48925e8f7efbcad15
+=======
+    sprites:
+    - serializedVersion: 2
+      name: Dados_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 156
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be272f83c19354e4f90d5a204ba2f8d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dados_1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 156
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b369e377801744bb450db4821e1618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dados_2
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 156
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e37ff74013a7ae489db664ec282004b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dados_3
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 15
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a56cb13c9eefc5649b3ad7ad5327feec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dados_4
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 15
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928ffa3b6e433fe4e94c7da28bf88865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dados_5
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 15
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ee5864ad84d6146a93066ccea0ac27
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 460c0c2ca662ebf4d8511ac667ad75ad
+>>>>>>> 91c8e3245631b37b7079f2160863cbba98aca53d
     vertices: []
     indices: 
     edges: []

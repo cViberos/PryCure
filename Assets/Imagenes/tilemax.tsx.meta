@@ -1,0 +1,55 @@
+fileFormatVersion: 2
+guid: e1f784953cc3de742bcd2ad7ac90b1e6
+ScriptedImporter:
+  fileIDToRecycleName:
+    2800000: Atlas_tilemax_1
+    11400000: _TilesetScriptObject
+    11400002: _superAsset
+    11400004: Tile_tilemax_1
+    11400006: Tile_tilemax_2
+    11400008: Tile_tilemax_3
+    11400010: Tile_tilemax_4
+    11400012: Tile_tilemax_5
+    11400014: Tile_tilemax_6
+    11400016: Tile_tilemax_7
+    11400018: Tile_tilemax_8
+    11400020: Tile_tilemax_9
+    11400022: Tile_tilemax_10
+    11400024: Tile_tilemax_11
+    11400026: Tile_tilemax_12
+    11400028: Tile_tilemax_13
+    11400030: Tile_tilemax_14
+    11400032: Tile_tilemax_15
+    21300000: Sprite_tilemax_1
+    21300002: Sprite_tilemax_2
+    21300004: Sprite_tilemax_3
+    21300006: Sprite_tilemax_4
+    21300008: Sprite_tilemax_5
+    21300010: Sprite_tilemax_6
+    21300012: Sprite_tilemax_7
+    21300014: Sprite_tilemax_8
+    21300016: Sprite_tilemax_9
+    21300018: Sprite_tilemax_10
+    21300020: Sprite_tilemax_11
+    21300022: Sprite_tilemax_12
+    21300024: Sprite_tilemax_13
+    21300026: Sprite_tilemax_14
+    21300028: Sprite_tilemax_15
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: cc34d0f3dc257a442819830b408c5322, type: 3}
+  missingFiles: []
+  errors: []
+  warnings: []
+  missingSortingLayers: []
+  missingLayers: []
+  missingTags: []
+  importerVersion: 10
+  pixelsPerUnit: 100
+  edgesPerEllipse: 32
+  numberOfObjectsImported: 33
+  useSpriteAtlas: 1
+  atlasWidth: 2048
+  atlasHeight: 2048
