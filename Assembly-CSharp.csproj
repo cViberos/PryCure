@@ -66,6 +66,8 @@
     <Compile Include="Assets\moverAvioneta.cs" />
     <Compile Include="Assets\Scripts\CursorObjeto.cs" />
     <Compile Include="Assets\Scripts\DetaiNodos.cs" />
+    <Compile Include="Assets\Scripts\ManagerHumano.cs" />
+    <Compile Include="Assets\Scripts\ManagerVirus.cs" />
     <Compile Include="Assets\Scripts\Menu\EstadoPersonaje.cs" />
     <Compile Include="Assets\Scripts\Menu\Iniciar.cs" />
     <Compile Include="Assets\tileData.cs" />
