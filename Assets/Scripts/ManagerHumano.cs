@@ -15,6 +15,6 @@ public class ManagerHumano : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("poblacion" + poblacion);
+        //Debug.Log("poblacion" + poblacion);
     }
 }
